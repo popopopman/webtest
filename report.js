@@ -155,7 +155,7 @@ function changeImage2() {
     } else {
         num2++;
     }
-    document.getElementById("pic2").src = "http://localhost/webeng/report/image/チームラボ/" + num2 + ".JPG";
+    document.getElementById("pic2").src = "https://github.com/tomokigithub/webtest/blob/main/image/チームラボ/" + num2 + ".JPG";
 }
 
 let num3 = 1;
@@ -165,7 +165,7 @@ function changeImage3() {
     } else {
         num3++;
     }
-    document.getElementById("pic3").src = "http://localhost/webeng/report/image/ディズニーランド/" + num3 + ".JPG";
+    document.getElementById("pic3").src = "https://github.com/tomokigithub/webtest/blob/main/image/ディズニーランド/" + num3 + ".JPG";
 }
 
 let num4 = 1;
@@ -175,7 +175,7 @@ function changeImage4() {
     } else {
         num4++;
     }
-    document.getElementById("pic4").src = "http://localhost/webeng/report/image/ネモフィラ/" + num4 + ".JPG";
+    document.getElementById("pic4").src = "https://github.com/tomokigithub/webtest/blob/main/image/ネモフィラ/" + num4 + ".JPG";
 }
 
 let num5 = 1;
@@ -185,5 +185,5 @@ function changeImage5() {
     } else {
         num5++;
     }
-    document.getElementById("pic5").src = "http://localhost/webeng/report/image/偕楽園/" + num5 + ".JPG";
+    document.getElementById("pic5").src = "https://github.com/tomokigithub/webtest/blob/main/image/偕楽園/" + num5 + ".JPG";
 }
