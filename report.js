@@ -145,7 +145,7 @@ function changeImage() {
     } else {
         num1++;
     }
-    document.getElementById("pic1").src = "http://localhost/webeng/report/image/ダチョウ王国/" + num1 + ".JPG";
+    document.getElementById("pic1").src = "https://github.com/tomokigithub/webtest/main/image/ダチョウ王国/" + num1 + ".JPG";
 }
 
 let num2 = 1;
@@ -165,7 +165,7 @@ function changeImage3() {
     } else {
         num3++;
     }
-    document.getElementById("pic3").src = "https://github.com/tomokigithub/webtest/blob/main/image/ディズニーランド/" + num3 + ".JPG";
+    document.getElementById("pic3").src = "https://github.com/tomokigithub/webtest/main/image/ディズニーランド/" + num3 + ".JPG";
 }
 
 let num4 = 1;
@@ -175,7 +175,7 @@ function changeImage4() {
     } else {
         num4++;
     }
-    document.getElementById("pic4").src = "https://github.com/tomokigithub/webtest/blob/main/image/ネモフィラ/" + num4 + ".JPG";
+    document.getElementById("pic4").src = "https://github.com/tomokigithub/webtest/main/image/ネモフィラ/" + num4 + ".JPG";
 }
 
 let num5 = 1;
