@@ -145,7 +145,7 @@ function changeImage() {
     } else {
         num1++;
     }
-    document.getElementById("pic1").src = "https://tomokigithub.github.io/webtest.io/image/ダチョウ王国" + num1 + ".JPG";
+    document.getElementById("pic1").src = "https://github.com/tomokigithub/webtest/blob/main/1.JPG";
 }
 
 let num2 = 1;
