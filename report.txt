@@ -1,0 +1,7 @@
+{"univ":[
+{"name":"ダチョウ王国石岡ファーム","lat":36.279253812206115,"lng": 140.26614311671122, "url":"http://www.dacho.co.jp/"},
+{"name":"チームラボプラネッツ TOKYO DMM.com","lat":35.65023631369822, "lng":139.78994551810842, "url":"https://planets.teamlab.art/tokyo"},
+{"name":"東京ディズニーランド","lat":35.63348904371121,"lng":139.880394256723,  "url":"https://www.tokyodisneyresort.jp/tdl/"},
+{"name":"国営ひたち海浜公園","lat":36.40585610441043,"lng":140.59533856119052, "url":"https://hitachikaihin.jp/"},
+{"name":"偕楽園","lat":36.37359656862852,"lng":140.4522176480991, "url":"https://www.ibarakiguide.jp/kairakuen.html"}
+]}

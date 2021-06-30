@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 千葉県観光地</title>
+        <link rel="stylesheet"  href="https://unpkg.com/leaflet@1.3.0/dist/leaflet.css" />
+        <link rel="stylesheet" href="http://localhost/webeng/report/report.css">
+        <script src="https://unpkg.com/leaflet@1.3.0/dist/leaflet.js"></script>
+        <script src="report.js" type="text/javascript" charset="UTF-8"></script>
+        <meta http-equiv="content-type" charset="UTF-8">
+    </head>
+
+    <body onload="init()">
+        <header class="topNavigation">
+            <p class="title">学部時代に行って良かった観光地5選</p>
+            <nav>
+                <ul>
+                    <span id="link"></span>
+                </ul>
+            </nav>
+        </header>
+        <section class="wrapper">
+            <div class="container">
+                <div class="content">
+                    <h2 class="heading">日本地図</h2>
+                    <div id="map" style="width: 640px;height:480px"></div>
+                </div>
+            </div>
+        </section>
+        <span id="tour"></span><br/>
+        <span id="reset"></span>
+        <section class="wrapper">
+            <div class="container">
+                <div class="content">
+                    <div class="content-item">
+                        <h2 class="heading">ダチョウ王国石岡ファーム</h2>
+                        <img loading="lazy" id="pic1"src="http://localhost/webeng/report/image/ダチョウ王国/1.JPG"></span><br>
+                    </div>    
+                    <div class="content-item">
+                        <div class="text">
+                            <a class="button" onclick="changeImage()">画像の切替</a><br>
+                            <p>個人的に期待値が低かった分、予想の裏切りとの落差が大きく、かなり満足度が高かったです。ダチョウだけでなくヤギやアルパカ、
+                                馬などいろいろな動物が放し飼いされていて触れ合うことができます。ダチョウ肉を食べる珍しい経験も！ダチョウとその他の動物は
+                                距離が離れているので注意。満足度は星★★★★★！</p><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wrapper">
+            <div class="container">
+                <div class="content">
+                    <div class="content-item">
+                        <h2 class="heading">チームラボプラネッツ TOKYO DMM.com</h2>
+                        <img loading="lazy" id="pic2"src="http://localhost/webeng/report/image/チームラボ/1.JPG"></span><br>
+                    </div>    
+                    <div class="content-item">
+                        <div class="text">
+                            <a class="button" onclick="changeImage2()">画像の切替</a><br>
+                            <p>海外のサイトでも取り上げられているのか外国人観光客も多いです。部屋全体を使ってデザインされたデジタルアートは圧巻！
+                            　アートを全身で感じる体験はまるで別世界に来ているかのよう！オープンしてから１年経った時も週末などは予約でいっぱい。早めの予約が
+                            必要かも？満足度は星★★★★★！
+                            </p><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wrapper">
+            <div class="container">
+                <div class="content">
+                    <div class="content-item">
+                        <h2 class="heading">東京ディズニーランド</h2>
+                        <img loading="lazy" id="pic3"src="http://localhost/webeng/report/image/ディズニーランド/1.JPG"></span><br>
+                    </div>    
+                    <div class="content-item">
+                        <div class="text">
+                            <a class="button" onclick="changeImage3()">画像の切替</a><br>
+                            <p>今更ディズニーランドって思っていませんか？乗り物に飽きた人は街のデザインに注目してみるといいかも！
+                                ２０世紀のアメリカの地方都市やディズニー・アニメの世界観が忠実に再現されていてGOOD！アニメの理解がより深まります。
+                                満足度は星☆★★★★！
+                            </p><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wrapper">
+            <div class="container">
+                <div class="content">
+                    <div class="content-item">
+                        <h2 class="heading">国営ひたち海浜公園</h2>
+                        <img loading="lazy" id="pic4"src="http://localhost/webeng/report/image/ネモフィラ/1.JPG"></span><br>
+                    </div>    
+                    <div class="content-item">
+                        <div class="text">
+                            <a class="button" onclick="changeImage4()">画像の切替</a><br>
+                            <p>皆さん、普段の運動は足りていますか？ここ、国営ひたち海浜公園ではゴールデンウィークにネモフィラが咲き、丘一面が青い花で埋めつくされます。
+                                友人や恋人とハイキングに行くと良いです。近くには結婚式場もあり、ウエディング写真をとっている人も！
+                                こんな綺麗なところで撮った写真は一生の思い出になること間違いなし！満足度は星☆★★★★！
+                            </p><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wrapper">
+            <div class="container">
+                <div class="content">
+                    <div class="content-item">
+                        <h2 class="heading">偕楽園</h2>
+                        <img loading="lazy" id="pic5"src="http://localhost/webeng/report/image/偕楽園/1.JPG"></span><br>
+                    </div>    
+                    <div class="content-item">
+                        <div class="text">
+                            <a class="button" onclick="changeImage5()">画像の切替</a><br>
+                            <p>最後は偕楽園！毎春、梅が咲き始めると夜はライトアップされ、幻想的な世界に！今年は先ほど紹介したチームラボとのコラボでライトアップだけでなく
+                                野外でデジタルアートが楽しめました！普段と違う偕楽園に満足度は星★★★★★！
+                            </p><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrapper2">
+            <div class="container">
+                <div class="content">
+                    <h2 class="heading">いかがでしたか？</h2>
+                    <div class="list">
+                        <div class="list-item">今回はよくあるレビュー系のサイト風のものを作ってみました。また、CSSを使った色々なデザインの勉強ができて良い経験になりました。</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </body>
+</html>
+
