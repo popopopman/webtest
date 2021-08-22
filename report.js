@@ -145,7 +145,7 @@ function changeImage() {
     } else {
         num1++;
     }
-    document.getElementById("pic1").src = "images/dacho/1.JPG";
+    document.getElementById("pic1").src = "images/dacho/2.JPG";
 }
 
 let num2 = 1;
