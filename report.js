@@ -43,7 +43,7 @@ function init() {
     
     //リセットボタンの表示
     var x = document.getElementById("reset");
-    x.innerHTML='<a class="button" onclick="Reset()">リセット</a>';
+    x.innerHTML='<a class="button" onclick="Reset()">リセット（ボタンが消えるだけ）</a>';
 }
 
 //report.txtを読み込んでマーカーとリンクを表示する関数
